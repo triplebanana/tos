@@ -1,0 +1,697 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1ba449f4-872f-80b9-b20b-ede6564e978f" class="page sans"><header><h1 class="page-title">Terms of Service</h1><p class="page-description"></p></header><div class="page-body"><p id="d9db8925-4d0c-4f9a-afff-445913185e2c" class="">Last updated: <strong> March 18, 2025</strong></p><p id="b5f6e65a-ae9f-4c40-80f2-f049f9a3627c" class="">
+</p><p id="61bd52fa-1b8a-479f-9d50-24283c1ca24c" class="">These Terms of Service (hereinafter referred to as &quot;Terms&quot;) govern the rights, duties, and responsibilities between Banana Browser (hereinafter referred to as the &quot;Service&quot;) and all users (hereinafter referred to as the &quot;User&quot;) who use the Service. If you do not agree to these Terms, you may not install or use the Service. By using the Service, you are deemed to have agreed to these Terms.</p><p id="1ba449f4-872f-806a-9f71-e0c70d80daf8" class="">
+</p><h1 id="a40909ce-e7d1-4a67-ac22-e2309e8d929c" class=""><strong>Service Description</strong></h1><p id="e411ef03-9d73-4c4f-9a31-93cf0dedd545" class="">Banana Browser offers a variety of features to make users&#x27; web browsing experience more efficient and secure. The main features include:</p><ul id="544a740f-4aa0-4824-90c9-804299fff0ce" class="bulleted-list"><li style="list-style-type:disc"><strong>Ad Blocking</strong>: Blocks unnecessary ads when browsing websites.</li></ul><ul id="4da2e2e6-c088-4dd9-813d-a666398d867f" class="bulleted-list"><li style="list-style-type:disc"><strong>Privacy Protection</strong>: Provides features to protect users&#x27; personal information and block tracking.</li></ul><ul id="7815fc79-6d59-42de-a39f-051ad0dec211" class="bulleted-list"><li style="list-style-type:disc"><strong>Built-in Media Player</strong>: Offers a powerful video player for convenient video viewing without external players.</li></ul><ul id="8aa26e1d-72d9-40af-be9c-e0d5b07ff6b7" class="bulleted-list"><li style="list-style-type:disc"><strong>Other Useful Features</strong>: Includes various features for better web browsing and is continually improved.</li></ul><p id="1ba449f4-872f-8032-97b0-f140e23f4df7" class="">
+</p><h1 id="7522aee3-e0f9-400a-affb-4163fc83cbb0" class=""><strong>Service Provider Information</strong></h1><p id="0da4919d-4630-4a6b-be6f-f2b5f04975d8" class="">Banana Browser is a non-commercial project developed by experts with a passion for browser development. The project aims to improve the user experience and provide an innovative web browsing environment. All development is carried out through voluntary participation of team members, and the project is not owned or managed by any specific corporation.</p><p id="1ba449f4-872f-8043-b06d-ea4f2287d460" class="">
+</p><h1 id="112e2002-12e9-4da6-b3c1-d1196b3d5ca7" class=""><strong>Rights and Ownership of the Service</strong></h1><h3 id="52836151-a1fd-4d8b-a76d-b2d92d6344e8" class=""><strong>Intellectual Property and Ownership</strong></h3><p id="67e0d5c5-a6b7-48c5-9e24-5bcf3249f296" class="">All intellectual property rights related to the Service and all software, code, algorithms, designs, graphics, logos, text, databases, documents, and other content associated with the Service (hereinafter referred to as &quot;Service Content&quot;) are owned by the Team or the legitimate license holders of the respective content. These Service Contents are protected by copyright, trademark, patent, and other applicable laws.</p><h3 id="c04deb63-fd59-40ef-bf95-b846138e3639" class=""><strong>User Rights</strong></h3><p id="47b32440-a6f2-460e-9d35-c755a7bb31cb" class="">The user is granted a <strong>non-exclusive, non-transferable</strong> license to use the Service <strong>for personal and non-commercial purposes only</strong> in accordance with these Terms. Commercial use of the Service, including reproduction, distribution, modification, or utilization for any other purpose, is strictly prohibited.</p><p id="1ba449f4-872f-8054-8a06-ed9e5c658886" class="">
+</p><h1 id="93a35c51-4315-4773-b2bf-095da6f0d9b3" class=""><strong>Prohibited User Activities</strong></h1><p id="33c10040-75f6-4c29-aac6-3dc63df5ac10" class="">The User agrees not to engage in the following activities while using the Service:</p><ol type="1" id="8c24ccad-7de1-43c6-9f87-892ccaf09301" class="numbered-list" start="1"><li><strong>Reverse Engineering and Analysis</strong>: Attempting to reverse engineer, disassemble, decompile, or analyze the source code of the Service.</li></ol><ol type="1" id="f6adfea6-81bc-486f-a9e6-b07b3f74913d" class="numbered-list" start="2"><li><strong>Commercial Activities</strong>: Creating derivative works based on the Service or using it for commercial activities.</li></ol><ol type="1" id="0a932a77-3017-404b-865f-e31815259961" class="numbered-list" start="3"><li><strong>Illegal Activities</strong>: Using the Service for illegal purposes or in a manner that infringes the rights of others.</li></ol><ol type="1" id="731e6079-feb7-4ecf-859c-7b07f504458e" class="numbered-list" start="4"><li><strong>Interference with the Service</strong>: Using the Service in a way that interferes with its normal operation.</li></ol><p id="1ba449f4-872f-805b-aefd-db161bc3ff4a" class="">
+</p><h1 id="c1af82ac-4fbc-44b8-b1bb-12311cf6da4d" class=""><strong>Service Updates, Changes, and Termination</strong></h1><h3 id="719c2728-b99a-4499-95b1-d7277bb96d57" class=""><strong>Service Updates</strong></h3><p id="9f0d307b-638e-4cd4-bd13-b37fecd1a045" class="">The Team may provide updates for performance improvements, bug fixes, and security enhancements. These updates may be regular or irregular and may be automatically downloaded and installed. The updates will be subject to these Terms.</p><h3 id="9b9974e0-c529-4958-946e-c1021cf9c291" class=""><strong>Service Changes</strong></h3><p id="27557352-2345-4c00-ad56-dce8553791c4" class="">The Team reserves the right to change the content or functionality of the Service. Changes to the Service will be communicated to users via announcements, and may be made without prior notice in some cases.</p><h3 id="66145436-98e2-4ad7-a975-ba8a1f6ae33f" class=""><strong>Service Termination</strong></h3><p id="eedf0974-f94f-48c2-b36f-7ab4a09c344f" class="">The Team reserves the right to terminate all or part of the Service at any time. In the event of termination, the Team will provide notice as much as possible in advance, and after the termination, access to the Service may no longer be available.</p><p id="1e403f03-cfec-4a8f-8747-8be47c481f2a" class="">Users may terminate their use of the Service at any time by uninstalling the Banana Browser app. Upon uninstalling the app, access to the Service will be terminated.</p><p id="1ba449f4-872f-8047-a7ac-d6c5dc621005" class="">
+</p><h1 id="b3e45bb7-9b09-4f01-8786-ea81d8a89c78" class=""><strong>Privacy Policy</strong></h1><p id="3a5ae340-d6fc-4519-9316-9cea2168d474" class="">The Team does not collect personal information from users and does not request any identifiable information. However, for the purpose of stable service provision and improvement of app errors, <strong>Google Play Console error logs may be collected on a limited basis</strong>. These logs do not contain personally identifiable information and are used solely for the purpose of analyzing and fixing errors. For more details, please refer to our <a href="https://triplebanana.dev/privacy_policy">Privacy Policy</a>.</p><p id="1ba449f4-872f-80c2-935a-d944d8e1c905" class="">
+</p><h1 id="41c7ad5f-95b6-4689-8c98-a855a15d4761" class=""><strong>Third-Party Services and Content</strong></h1><p id="03f84e53-d716-425f-944f-1f5a0165f222" class="">The Service is provided free of charge, and to sustain the ongoing operation of the Service, it may include affiliate links or third-party content. Such third-party content is provided by the respective third parties, and the Team does not provide any warranties regarding the quality, accuracy, validity, virus-free status, or non-infringement of third-party rights. The use of third-party services and content is subject to the terms of service, license agreements, privacy policies, and other applicable agreements of the respective third-party providers.</p><p id="1ba449f4-872f-8008-9631-c05014de82e3" class="">
+</p><h1 id="f97d6110-2ba8-44ba-ac73-b15b9d587c16" class=""><strong>Limitation of Liability</strong></h1><h3 id="14306972-fc4c-46db-b64d-6eb55a39fbb1" class=""><strong>Limitation of Responsibility</strong></h3><p id="2a77f586-ac01-4fbf-ac57-6a4e62dd6628" class="">The Team shall not be liable for any damages arising from the use or inability to use the Service, including any errors, interruptions, defects, delays in transmission, viruses, or connection failures, to the extent permitted by applicable law.</p><h3 id="f3ea7478-7156-493a-99d9-906e6d35b508" class=""><strong>Indemnification</strong></h3><p id="04377198-865d-4e08-be09-ebd9fce6ac28" class="">The Team shall not be liable for any indirect, special, punitive, or consequential damages that may arise from the use of the Service, and the User agrees to this limitation.</p><p id="1ba449f4-872f-8012-a7fa-c32b86a0638f" class="">
+</p><h1 id="2e658f09-6e7c-4446-80b2-dcbeeb324c57" class=""><strong>Dispute Resolution and Governing Law</strong></h1><p id="903ed6e5-3018-47f5-9acf-9544ee151543" class="">These Terms will be <strong>governed and interpreted in accordance with the laws of the Republic of Korea</strong>, without regard to any conflicts of laws principles. Any disputes, disagreements, or differences of opinion arising during the use of the Service that cannot be resolved amicably will be subject to the non-exclusive jurisdiction of the court of the User&#x27;s residence. The procedure for resolving such disputes will be carried out in the relevant court. However, if the laws of the User’s country specifically apply, those laws may take precedence.</p><p id="1ba449f4-872f-809b-abbf-fe92a12f1369" class="">
+</p><h1 id="de2ebe6c-da64-4207-89a1-75e152e54378" class=""><strong>Changes to the Terms</strong></h1><p id="7af8bdb2-b4dd-43d9-8b81-507dcf57c2c9" class="">The Team may change these Terms at any time, and the change history will be posted on this page. The updated Terms will take effect from the date they are posted. By continuing to use the Service after the changes are posted, the User is deemed to agree to the updated Terms.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
